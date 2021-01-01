@@ -1,4 +1,12 @@
-$HEADER$namespace $NAMESPACE$
+using System.Collections.Generic;
+
+namespace Blazares.IOServiceDuplicates.FilesFinder
 {
-  public class $CLASS$ {$END$}
+    public interface IFilesSeeker
+    {
+        List<string> ByPath(string path);
+        
+        List<string> ByPathAndExtensions(string path, string [] wantedExtensions);
+
+    }
 }
