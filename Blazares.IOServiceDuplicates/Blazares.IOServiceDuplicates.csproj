@@ -3,14 +3,14 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>0.0.1</PackageVersion>
+        <PackageVersion>0.8.5</PackageVersion>
         <Title>IO Service duplicates</Title>
         <Description>Program to Delete duplicate files </Description>
         <Copyright>Eddie Krill</Copyright>
         <PackageProjectUrl>https://github.com/scherenhaenden/Blazares.IOServiceDuplicates</PackageProjectUrl>
         <RepositoryUrl>https://github.com/scherenhaenden/Blazares.IOServiceDuplicates</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
-        <AssemblyVersion>0.0.1</AssemblyVersion>
+        <AssemblyVersion>0.8.5</AssemblyVersion>
         <PackageTags>Files Duplicates</PackageTags>
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
