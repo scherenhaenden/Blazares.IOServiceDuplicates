@@ -92,6 +92,13 @@ namespace Blazares.IOServiceDuplicates.Engine.Tests.Engine
         public void Test2_FileSeeker_ByPath_And_ByExtension()
         {
             IFilesSeeker filesSeeker = new FilesSeeker();
+            
+            if (!Directory.Exists(TestRunDirectoryPath))
+            {
+                Setup();
+            }
+            
+            
             var result = filesSeeker.ByPath(TestRunDirectoryPath);
 
             var countOfFiles = result.Count;
@@ -105,6 +112,11 @@ namespace Blazares.IOServiceDuplicates.Engine.Tests.Engine
         [Test]
         public void Test3_GetHash()
         {
+            if (!Directory.Exists(TestRunDirectoryPath))
+            {
+                Setup();
+            }
+            
             IFileHasher fileHasher = new FileHasherMd5();
             var hashResult = fileHasher.GetHashFromFileByPath(TestRunDirectoryPath + "/" + "./1c5442f6-6bb6-4ab7-b603-f598e7579dd2");
             Assert.AreEqual("07c73e0a87f0bf08c956312289a0263c", hashResult.ToLower());
@@ -114,6 +126,11 @@ namespace Blazares.IOServiceDuplicates.Engine.Tests.Engine
         [Test]
         public void Test9_DeleteDuplicates()
         {
+            if (!Directory.Exists(TestRunDirectoryPath))
+            {
+                Setup();
+            }
+            
             IFilesSeeker filesSeeker = new FilesSeeker();
             var files = filesSeeker.ByPath(TestRunDirectoryPath);
             files = files.Where(x=> !x.Contains(".directory")).ToList();
