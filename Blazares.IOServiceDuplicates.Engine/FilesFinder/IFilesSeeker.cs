@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Blazares.IOServiceDuplicates.FilesFinder
+namespace Blazares.IOServiceDuplicates.Engine.FilesFinder
 {
     public interface IFilesSeeker
     {

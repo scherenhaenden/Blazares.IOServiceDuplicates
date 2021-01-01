@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Blazares.IOServiceDuplicates.FilesFinder
+namespace Blazares.IOServiceDuplicates.Engine.FilesFinder
 {
     public class FilesSeeker: IFilesSeeker
     {
@@ -11,11 +11,19 @@ namespace Blazares.IOServiceDuplicates.FilesFinder
             return ByPathAndExtensions(path, null);
         }
 
+        //FIXME: do this better
         public List<string> ByPathAndExtensions(string path, string[] wantedExtensions)
         {
-            List<string> files = Enumerable.Where(Directory
-                    .GetFiles(path, "*.*", System.IO.SearchOption.AllDirectories), file => Enumerable.Any(wantedExtensions, file.EndsWith))?
-                .ToList();
+            List<string> files = Directory
+                .GetFiles(path, "*.*", System.IO.SearchOption.AllDirectories).ToList();
+
+            if (wantedExtensions != null)
+            {
+                files = files.Where(file => wantedExtensions.Any(file.EndsWith))?
+                    .ToList();
+            }
+
+            
             return files;
         }
     }
