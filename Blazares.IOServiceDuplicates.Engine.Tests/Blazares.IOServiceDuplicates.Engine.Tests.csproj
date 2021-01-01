@@ -16,8 +16,4 @@
       <ProjectReference Include="..\Blazares.IOServiceDuplicates.Engine\Blazares.IOServiceDuplicates.Engine.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Engine" />
-    </ItemGroup>
-
 </Project>
