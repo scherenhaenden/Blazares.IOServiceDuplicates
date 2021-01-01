@@ -30,7 +30,7 @@ jobs:
       - name: build project
         run: dotnet build
 
-      - name: build project
+      - name: test project
         run: dotnet test
 
     
