@@ -18,14 +18,13 @@ jobs:
         dotnet: [ '3.1.x', '5.0.100' ]    
     steps:
       - uses: actions/checkout@v2
+        id: build_project
       - name: Setup dotnet
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ matrix.dotnet }}
-      - run: dotnet restore
+       # restore dependencies  
+      - name: Install dependencies
+        run: dotnet restore
 
-      - name: Build
-      - run: dotnet build
-
-      - name: Test
-      - run: dotnet test
+    
