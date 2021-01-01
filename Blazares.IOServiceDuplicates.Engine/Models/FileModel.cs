@@ -1,4 +1,13 @@
-$HEADER$namespace $NAMESPACE$
+namespace Blazares.IOServiceDuplicates.Engine.Models
 {
-  public class $CLASS$ {$END$}
+    public class FileModel:GeneralFileModel
+    {
+        public FileModel ()
+        {
+        }
+        private void any()
+        {
+			
+        }
+    }
 }
