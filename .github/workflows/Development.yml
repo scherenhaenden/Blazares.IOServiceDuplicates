@@ -16,13 +16,21 @@ jobs:
     strategy:
       matrix:
         dotnet: [ '3.1.x', '5.0.100' ]
+
+    
     steps:
+      - name: Dotnet ${{ matrix.dotnet }} sample
       - uses: actions/checkout@v2
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: ${{ matrix.dotnet }}
 
        # restore dependencies  
       - name: Install dependencies
         run: dotnet restore
-      - name: build porjct
+      - name: build project
         run: dotnet build
 
       # Runs test
