@@ -23,3 +23,9 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet }}
       - run: dotnet restore
+
+      - name: Build
+      - run: dotnet build
+
+      - name: Test
+      - run: dotnet test
