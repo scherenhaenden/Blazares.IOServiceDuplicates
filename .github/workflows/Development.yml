@@ -22,15 +22,4 @@ jobs:
       - name: Dotnet ${{ matrix.dotnet }} sample
       - uses: actions/checkout@v2
 
-      - name: Setup dotnet and install dependencies
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: ${{ matrix.dotnet }}
-      - run: dotnet restore
-       
-      - name: build project
-        run: dotnet build
-
-      # Runs test
-      - name: Run a multi-line script
-        run: dotnet test  
+  
