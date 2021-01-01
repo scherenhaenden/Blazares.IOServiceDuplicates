@@ -24,3 +24,7 @@ jobs:
         run: dotnet restore
       - name: build porjct
         run: dotnet build
+
+      # Runs test
+      - name: Run a multi-line script
+        run: dotnet test  
