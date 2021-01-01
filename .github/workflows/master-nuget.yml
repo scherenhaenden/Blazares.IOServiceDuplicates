@@ -10,7 +10,7 @@ on:
 # Name the jobs 
 jobs:
   publish:
-    name: build, pack & publish
+    name: publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

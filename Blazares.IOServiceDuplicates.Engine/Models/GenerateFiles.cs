@@ -8,14 +8,14 @@ namespace Blazares.IOServiceDuplicates.Engine.Models
         {
         }
 
-        public List<FileModel> StringsToModels(string [] Files)
+        public List<GeneralFileModel> StringsToModels(string [] Files)
         {
-            List<FileModel> AllFiles = new List<FileModel> ();
-            FileModel TempFile;
+            List<GeneralFileModel> AllFiles = new List<GeneralFileModel> ();
+            GeneralFileModel TempFile;
             foreach(var filestring in Files)
             {
 				
-                TempFile = new FileModel ();
+                TempFile = new GeneralFileModel ();
                 TempFile.FullPathOfFile = filestring;
                 AllFiles.Add (TempFile);
             }
