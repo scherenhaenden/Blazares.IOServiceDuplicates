@@ -1,0 +1,36 @@
+# Name of the action
+
+name: CI Tests
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the Development branch
+on:
+  push:
+    branches: [ Development ]
+# Name the jobs 
+jobs:
+  publish:
+    name: build, pack & publish
+    # Run on Ubuntu
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet: [ '5.0.100' ]    
+    steps:
+      - uses: actions/checkout@v2
+        id: build_project
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: ${{ matrix.dotnet }}
+       # restore dependencies  
+      - name: Install dependencies
+        run: dotnet restore
+
+      - name: build project
+        run: dotnet build
+
+      - name: test project
+        run: dotnet test
+
+    

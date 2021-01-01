@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazares.IOServiceDuplicates", "Blazares.IOServiceDuplicates\Blazares.IOServiceDuplicates.csproj", "{77629B24-DA2A-47BD-8529-D0C657CC1F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazares.IOServiceDuplicates.Engine", "Blazares.IOServiceDuplicates.Engine\Blazares.IOServiceDuplicates.Engine.csproj", "{228F1372-50ED-4910-8285-24BFB3049F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazares.IOServiceDuplicates.Engine.Tests", "Blazares.IOServiceDuplicates.Engine.Tests\Blazares.IOServiceDuplicates.Engine.Tests.csproj", "{FE93E793-E2C3-4934-9D08-8AB9FAB8DED2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77629B24-DA2A-47BD-8529-D0C657CC1F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77629B24-DA2A-47BD-8529-D0C657CC1F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77629B24-DA2A-47BD-8529-D0C657CC1F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77629B24-DA2A-47BD-8529-D0C657CC1F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228F1372-50ED-4910-8285-24BFB3049F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228F1372-50ED-4910-8285-24BFB3049F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228F1372-50ED-4910-8285-24BFB3049F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228F1372-50ED-4910-8285-24BFB3049F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE93E793-E2C3-4934-9D08-8AB9FAB8DED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE93E793-E2C3-4934-9D08-8AB9FAB8DED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE93E793-E2C3-4934-9D08-8AB9FAB8DED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE93E793-E2C3-4934-9D08-8AB9FAB8DED2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
