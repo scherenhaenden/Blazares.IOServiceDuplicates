@@ -27,4 +27,7 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
 
+      - name: build porjct
+        run: dotnet build
+
     
