@@ -10,13 +10,15 @@ namespace Blazares.IOServiceDuplicates
     {
         static void Main(string[] args)
         {
-            IFilesSeeker filesSeeker = new FilesSeeker();
-            var files = filesSeeker.ByPath(@"/home/edward/Strato/rechnungen/11.2020/");
+            //FIXME: also tech deb
+            
+            /*IFilesSeeker filesSeeker = new FilesSeeker();
+            var files = filesSeeker.ByPath("");
             
             GenerateFiles gf = new GenerateFiles ();
             var allFiles=gf.StringsToModels (files.ToArray());
             
-            var value =new FileModelDeleteDuplicates(new FileHasherMd5()).Run(allFiles);
+            var value =new FileModelDeleteDuplicates(new FileHasherMd5()).Run(allFiles);*/
             
             Console.WriteLine("Hello World!");
         }
