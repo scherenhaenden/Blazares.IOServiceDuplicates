@@ -15,7 +15,7 @@ namespace Blazares.IOServiceDuplicates.Engine.DeleteDuplicates
             this.fileHasher = fileHasher;
         }
 
-        public List<FileModel> Run(List<FileModel> allFiles)
+        public List<GeneralFileModel> Run(List<GeneralFileModel> allFiles)
         {
             var totalDupeItems = allFiles.GroupBy (x => x.GeneralFileInformation.Length).Where (x => x.Skip (1).Any ()).ToList();
             foreach(var groupd in totalDupeItems)
@@ -31,9 +31,9 @@ namespace Blazares.IOServiceDuplicates.Engine.DeleteDuplicates
             return allFiles;            
         }
 
-        public List<FileModel> EachGroupGetHash(IGrouping<long,FileModel> igr)
+        public List<GeneralFileModel> EachGroupGetHash(IGrouping<long,GeneralFileModel> igr)
         {
-            List<FileModel> Files = new List<FileModel> ();
+            List<GeneralFileModel> Files = new List<GeneralFileModel> ();
             foreach (var gr in igr) 
             {
                 gr.Hash = fileHasher.GetHashFromFileByPath (gr.FullPathOfFile);
@@ -42,10 +42,10 @@ namespace Blazares.IOServiceDuplicates.Engine.DeleteDuplicates
             return Files;
 
         }
-        public List<FileModel> DeleteDuplicates(List<FileModel> eachGroupGetHash)
+        public List<GeneralFileModel> DeleteDuplicates(List<GeneralFileModel> eachGroupGetHash)
         {
             string PivotValue = eachGroupGetHash [0].FullPathOfFile;
-            List<FileModel> Deletable = new List<FileModel> ();
+            List<GeneralFileModel> Deletable = new List<GeneralFileModel> ();
 
             var NotSame=eachGroupGetHash.Where (x => x.FullPathOfFile != PivotValue).ToList ();
 
