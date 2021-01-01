@@ -1,6 +1,6 @@
 namespace Blazares.IOServiceDuplicates.DuplicateFinder
 {
-    public class IGetDuplicates
+    public interface IGetDuplicates
     {
         
     }
