@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>0.0.1</PackageVersion>
+        <Title>IO Service duplicates</Title>
+        <Description>Program to Delete duplicate files </Description>
+        <Copyright>Eddie Krill</Copyright>
+        <PackageProjectUrl>https://github.com/scherenhaenden/Blazares.IOServiceDuplicates</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/scherenhaenden/Blazares.IOServiceDuplicates</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <AssemblyVersion>0.0.1</AssemblyVersion>
+        <PackageTags>Files Duplicates</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Blazares.IOServiceDuplicates.Engine\Blazares.IOServiceDuplicates.Engine.csproj" />
+    </ItemGroup>
+
+</Project>

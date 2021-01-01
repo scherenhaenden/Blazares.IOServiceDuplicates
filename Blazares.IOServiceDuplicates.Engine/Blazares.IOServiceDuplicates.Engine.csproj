@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageVersion>0.0.1</PackageVersion>
+        <Title>IO Service duplicates Engine</Title>
+        <Description>Program to Delete duplicate files  (Only Engine)</Description>
+        <Copyright>Eddie Krill</Copyright>
+        <PackageProjectUrl>https://github.com/scherenhaenden/Blazares.IOServiceDuplicates</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/scherenhaenden/Blazares.IOServiceDuplicates</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/scherenhaenden/Blazares.IOServiceDuplicates</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <PackageTags>Files Duplicates</PackageTags>
+        <TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>
+    </PropertyGroup>
+
+</Project>
