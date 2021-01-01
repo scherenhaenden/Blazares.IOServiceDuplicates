@@ -1,4 +1,4 @@
-namespace Blazares.IOServiceDuplicates.DuplicateFinder
+namespace Blazares.IOServiceDuplicates.Engine.DuplicateFinder
 {
     public interface IGetDuplicates
     {

@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Security.Cryptography;
 
-namespace Blazares.IOServiceDuplicates.Hashers
+namespace Blazares.IOServiceDuplicates.Engine.Hashers
 {
     public class FileHasherMd5: IFileHasherMd5
     {

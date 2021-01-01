@@ -1,4 +1,4 @@
-namespace Blazares.IOServiceDuplicates.Hashers
+namespace Blazares.IOServiceDuplicates.Engine.Hashers
 {
     public interface IFileHasher
     {
