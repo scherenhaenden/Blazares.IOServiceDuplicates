@@ -4,9 +4,7 @@ namespace Blazares.IOServiceDuplicates.Engine.FilesFinder
 {
     public interface IFilesSeeker
     {
-        List<string> ByPath(string path);
-        
-        List<string> ByPathAndExtensions(string path, string [] wantedExtensions);
+        List<string> ByPath(string path, string [] wantedExtensions = null);
 
     }
 }
